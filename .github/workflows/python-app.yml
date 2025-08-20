@@ -10,7 +10,7 @@ permissions:
   contents: read  # Necessary to read the repository contents 
 
 env:
-  CLOUDSMITH_SERVICE: gh-actions # The service slug for the Cloudsmith service
+  CLOUDSMITH_SERVICE: gh-actions-3vjo # The service slug for the Cloudsmith service
   CLOUDSMITH_WORKSPACE: red # The workspace slug for the Cloudsmith service 
   CLOUDSMITH_REPOSITORY: cg-flask # The repository slug for the Cloudsmith service
 
