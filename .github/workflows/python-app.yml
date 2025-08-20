@@ -11,7 +11,7 @@ permissions:
 
 env:
   CLOUDSMITH_SERVICE: gh-actions # The service slug for the Cloudsmith service
-  CLOUDSMITH_WORKSPACE: dmk-software-solutions # The workspace slug for the Cloudsmith service 
+  CLOUDSMITH_WORKSPACE: red # The workspace slug for the Cloudsmith service 
   CLOUDSMITH_REPOSITORY: cg-flask # The repository slug for the Cloudsmith service
 
 jobs:
