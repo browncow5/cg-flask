@@ -1,6 +1,7 @@
 """Basic example Flask application."""
 
 from flask import Flask
+import numpy as np
 
 app = Flask(__name__)
 
