@@ -4,3 +4,4 @@ gunicorn
 spotipy==2.25.1
 numpy
 nvidia-cublas-cu12
+torch==2.6.0+cu126
