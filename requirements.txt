@@ -3,4 +3,4 @@ Flask
 gunicorn
 spotipy==2.25.1
 numpy
-torch==2.6.0
+torch==2.0.1
