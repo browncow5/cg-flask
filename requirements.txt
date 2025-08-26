@@ -2,5 +2,4 @@ pytest
 Flask
 gunicorn
 spotipy==2.25.1
-numpy
-torch==2.0.1
+
