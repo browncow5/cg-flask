@@ -32,16 +32,6 @@ jobs:
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v3
 
-        # Manual Import Step
-      - name: Terraform Import
-        run: terraform import ${{ github.event.inputs.import_address }} ${{ github.event.inputs.import_id }}
-        working-directory: ./terraform
-
-      # Regular Plan/Apply steps
-      - name: Terraform Plan
-        run: terraform plan -no-color  -input=false
-        working-directory: ./terraform
-        
       - name: Terraform Init and Apply
         run: |
           terraform init
