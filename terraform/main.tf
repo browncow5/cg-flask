@@ -11,9 +11,8 @@ terraform {
     }
   }
 }
-provider "cloudsmith" {
-  api_key = var.cloudsmith_api_key
-}
+# CLOUDSMITH_API_KEY environment variable set by the GitHub Action.
+provider "cloudsmith" {}
 # -----------------------------------------------------------------------------
 # Variables
 # -----------------------------------------------------------------------------
