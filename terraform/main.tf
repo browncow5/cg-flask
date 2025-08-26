@@ -17,11 +17,6 @@ provider "cloudsmith" {
 # -----------------------------------------------------------------------------
 # Variables
 # -----------------------------------------------------------------------------
-variable "cloudsmith_api_key" {
-  description = "Cloudsmith API Key"
-  type        = string
-  sensitive   = true
-}
 variable "cloudsmith_org_slug" {
   description = "Slug for your Cloudsmith organization"
   type        = string
