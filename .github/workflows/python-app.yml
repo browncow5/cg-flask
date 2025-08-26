@@ -35,7 +35,7 @@ jobs:
       - name: Terraform Init and Apply
         run: |
           terraform init
-          terraform apply -auto-approve
+          terraform apply -auto-approve -input=false
         working-directory: ./terraform
 
   # Job 2: Build and Publish the Application
