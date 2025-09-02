@@ -2,3 +2,5 @@ pytest
 Flask
 gunicorn
 spotipy==2.25.0
+nvidia-cusparselt-cu12==0.6.3
+torch==2.6.0+cu126
