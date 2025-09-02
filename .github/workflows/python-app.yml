@@ -10,9 +10,9 @@ permissions:
   contents: read  # Necessary to read the repository contents 
 
 env:
-  CLOUDSMITH_SERVICE: gh-actions-3vjo # The service slug for the Cloudsmith service
-  CLOUDSMITH_WORKSPACE: red-acme-inc # The workspace slug for the Cloudsmith service 
-  CLOUDSMITH_REPOSITORY: customer-dev # The repository slug for the Cloudsmith service
+  CLOUDSMITH_SERVICE: gh-actions-3vjo # The service slug for the Cloudsmith service.
+  CLOUDSMITH_WORKSPACE: red-acme-inc # The workspace slug for the Cloudsmith service. 
+  CLOUDSMITH_REPOSITORY: customer-dev # The repository slug for the Cloudsmith service.
 
 jobs:
   build-publish:
