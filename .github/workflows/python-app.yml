@@ -10,9 +10,9 @@ permissions:
   contents: read  # Necessary to read the repository contents 
 
 env:
-  CLOUDSMITH_SERVICE: gh-actions-3vjo # The service slug for the Cloudsmith service.
-  CLOUDSMITH_WORKSPACE: red-acme-inc # The workspace slug for the Cloudsmith service. 
-  CLOUDSMITH_REPOSITORY: customer-prod # The repository slug for the Cloudsmith service.
+  CLOUDSMITH_SERVICE: gh-actions-3vjo # The service slug for the Cloudsmith service
+  CLOUDSMITH_WORKSPACE: red-acme-inc # The workspace slug for the Cloudsmith service 
+  CLOUDSMITH_REPOSITORY: customer-prod # The repository slug for the Cloudsmith service
 
 jobs:
   build-publish:
@@ -32,7 +32,7 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: "3.10"
-        
+
     - name: Install dependencies
       run: |
         pip install -r requirements.txt --index-url https://$CLOUDSMITH_SERVICE:$CLOUDSMITH_API_KEY@dl.cloudsmith.io/basic/$CLOUDSMITH_WORKSPACE/$CLOUDSMITH_REPOSITORY/python/simple/
@@ -53,7 +53,7 @@ jobs:
         registry: docker.cloudsmith.io
         username: ${{ env.CLOUDSMITH_SERVICE }}
         password: ${{ env.CLOUDSMITH_API_KEY }} 
-            
+
     - name: Build and push image
       uses: docker/build-push-action@v6
       with:
