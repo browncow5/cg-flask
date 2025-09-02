@@ -1,4 +1,4 @@
 pytest
 Flask
 gunicorn
-spotipy==2.25.0
+spotipy==2.25.1
